@@ -3,4 +3,4 @@
 #### Prototipo de baja fidelidad
 El prototipo de baja fidelidad fue elaborado en [Miro](https://miro.com/app/dashboard/).
 
-![Prototipo baja fidelidad](./assets/img/Doc1_page-0001.jpg)
+![Prototipo baja fidelidad](./assets/img/Low%20Fidelity%20Prototype%20Template.jpg)
