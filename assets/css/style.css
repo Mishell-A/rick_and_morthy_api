@@ -18,7 +18,7 @@ h1 {
   color: #00ff00;
   letter-spacing: 9px;
   text-align: center;
-  margin: 0; /* Ajustado para evitar márgenes innecesarios */
+  margin: 0;
   text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.6),
     0 0 30px rgba(0, 255, 0, 0.4); /* Efecto de resplandor */
 }
@@ -37,14 +37,13 @@ h3 {
   color: #ffffff;
   letter-spacing: 1px;
   text-align: center;
-  margin: 10px 0; /* Añadido margen superior e inferior para separación */
+  margin: 10px 0;
 }
 
 div {
-  max-width: 600px; /* Limita el ancho máximo del contenedor */
-  margin: 0; /* Elimina el margen automático para centrar el contenedor */
-
-  text-align: center; /* Alinea todo el texto al centro */
+  max-width: 600px;
+  margin: 0;
+  text-align: center;
   align-items: center;
 }
 
@@ -72,6 +71,6 @@ div {
 
 p {
   color: #ffffff;
-  margin: 60px 0; /* Añadido margen para separación */
-  line-height: 1.6; /* Espacio entre líneas */
+  margin: 60px 0;
+  line-height: 1.6;
 }
