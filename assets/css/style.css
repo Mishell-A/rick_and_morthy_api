@@ -5,12 +5,15 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  margin: 0;
+  padding: 0;
 }
 main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 h1 {
@@ -26,7 +29,7 @@ h1 {
 img {
   display: flex;
   width: 45%;
-  height: 625px;
+  height: 700px;
   box-shadow: 3px;
   border-radius: 5px;
   margin: 0;
@@ -59,7 +62,8 @@ div {
   letter-spacing: 1px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  margin: 20px auto;
+  margin: 18px auto;
+  text-decoration: none;
 }
 
 #btn:hover {
