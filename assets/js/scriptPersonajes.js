@@ -4,18 +4,43 @@ function getcharacter(id) {
   $.get(`https://rickandmortyapi.com/api/character/${id}`, function (data) {
       let charCard = $("<div></div>").addClass("caracter-card");
 
-      // Nombre del personaje
-      let nombre = $(`<a href="#" id="${id}"></a>`).text(data.name.toUpperCase()); // Corregido el uso de "data.name"
+      let nombre = $(`<a href="#" id="${id}"></a>`).text(data.name.toUpperCase()); 
       nombre.addClass("name-personaje");
 
       let nombreContainer = $("<div></div>").addClass("name-container");
       nombreContainer.append(nombre);
 
-      // Imagen del personaje
-      let img = $("<img />").attr("src", data.image); // Corregido a "data.image"
+      let img = $("<img />").attr("src", data.image); 
       img.addClass("img-personaje");
+      // Información adicional para mostrar en el hover
+      let infoDeHover = $("<div></div>").addClass("info-hover");
 
-      charCard.append(nombreContainer, img);
+      let tituloDetalles = $("<h3></h3>").text("DETALLES:");
+      tituloDetalles.addClass("titulo-hover");
+
+      let circulo_Status = $("<div></div>").addClass("circulo-status");
+      if (data.status == "Alive") {
+        circulo_Status.addClass("vivo");
+      } else if (data.status == "Dead"){
+        circulo_Status.addClass("muerto");
+      } else {
+        circulo_Status.addClass("desconocido");
+      }
+
+
+
+      let statusContainer = $("<div></div>").addClass("status-container");
+      statusContainer.append(circulo_Status); 
+      statusContainer.append($("<span></span>").text(`Estado: ${data.status}`)); 
+
+      let species = $("<p></p>").text(`Especie: ${data.species}`);
+
+      let genero = $("<p></p>").text(`Género: ${data.gender}`);
+
+        
+      infoDeHover.append(tituloDetalles,genero, species, statusContainer);
+
+      charCard.append(nombreContainer, img, infoDeHover);
       $("#personajes-container").append(charCard);
   });
 }

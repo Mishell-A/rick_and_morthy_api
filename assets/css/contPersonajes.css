@@ -14,10 +14,11 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #00ff00, #003300);
+  background: linear-gradient(130deg, #00ff00, #003300);
   padding: 10px 20px;
   border-bottom: 2px solid #00ff00;
   box-shadow: 0px 4px 15px rgba(0, 255, 0, 0.3);
+  height: 80px;
 }
 
 nav > img {
@@ -30,7 +31,7 @@ nav h1 {
   color: #00ff00;
   letter-spacing: 5px;
   text-shadow: 0px 0px 5px rgba(0, 255, 0, 0.7);
-  font-size: 40px;
+  font-size: 50px;
 }
 
 footer {
@@ -57,7 +58,7 @@ footer {
 .caracter-card {
   border: 1px solid #ffffff;
   border-radius: 10px;
-  width: 200px;
+  width: 300px;
   padding: 10px;
   box-shadow: 0px 4px 15px rgba(0, 255, 0, 0.3);
   text-align: center;
@@ -65,8 +66,8 @@ footer {
 }
 
 .caracter-card:hover {
-  transform: scale(1.05); /* Efecto de zoom */
-  box-shadow: 0px 8px 25px rgba(0, 255, 0, 0.6); /* Sombra más pronunciada */
+  transform: scale(1.05);
+  box-shadow: 0px 8px 25px rgba(0, 255, 0, 0.6);
 }
 .caracter-card img {
   width: 100%;
@@ -84,4 +85,51 @@ footer {
 
 .name-container {
   height: 55px;
+}
+
+.info-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  padding-top: 45%;
+  font-size: 18px; /* Tamaño de fuente */
+}
+
+.caracter-card:hover .info-hover {
+  display: block;
+}
+
+.circulo-status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.vivo {
+  background-color: green;
+}
+
+.muerto {
+  background-color: red;
+}
+
+.desconocido {
+  background-color: gray;
+}
+
+.info-hover h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ff00;
+  text-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
 }
