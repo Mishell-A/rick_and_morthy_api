@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // Obtenemos el dato del lugar guardado
+
   const lugar = JSON.parse(localStorage.getItem("dataDetalleLugar"));
 
   console.log(lugar);
@@ -14,7 +14,7 @@ $(document).ready(function () {
    
 
    if (lugar.residents.length > 0) {
-      // Llenar los residentes
+    
     for (let residente of lugar.residents) {
       $.get(residente, function (residenteData) {
         let card = $("<div></div>").addClass("detalles-card");

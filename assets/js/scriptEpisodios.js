@@ -1,29 +1,33 @@
-$(document).ready(function () {
-    // Obtenemos el dato del lugar guardado
-    const lugar = JSON.parse(localStorage.getItem("dataDetalleLugar"));
+//* https://rickandmortyapi.com/api/episode */
+function getEpisode(id) {
+    $.get(`https://rickandmortyapi.com/api/episode/${id}`, function (data) {
+        let episodeCard = $("<div></div>").addClass("episode-card");
 
-    
-    $("#nombre-lugar").text(lugar.name);
-    $("#tipo-lugar").text(lugar.type)
-    
-  
-  
-    if (lugar.residents.length > 0) {
-        // Llenar los residentes
-      for (let residente of lugar.residents) {
-        $.get(residente, function (residenteData) {
-          let card = $("<div></div>").addClass("detalles-card");
-          let nombre = $(`<h2></h2`).text(residenteData.name);
-          let img = $("<img />").attr("src", residenteData.image);
-          
-  
-          card.append(img, nombre);
-  
-          $("#residentes-container").append(card);
-        });
-      }
-    } else {
-      $("#residentes-container").append("<p>Este lugar no tiene residentes</p>");
-    }
+        let nombre = $(`<a href="./detallesEp.html" id="${id}"></a>`).text(data.name.toUpperCase());
+        nombre.addClass("name-episodios");
+
+        let nombreContainer = $("<div></div>").addClass("name-container");
+        nombreContainer.append(nombre);
+
+
+        episodeCard.append(nombreContainer);
+        $("#episode-container").append(episodeCard);
+    });
+}
+
+$(document).on("click", ".name-episodios", function (e) {
+    console.log(e.target.id);
+
+    $.get(`https://rickandmortyapi.com/api/episode/${e.target.id}`, function (data) {
+        
+        localStorage.setItem("dataDetalleEpisodios", JSON.stringify(data));
+    });
+});
+
+$(document).ready(function () {
+    console.log(1);
    
-  });
+    for (let i = 1; i <= 51; i++) {
+        getEpisode(i);
+    }
+});

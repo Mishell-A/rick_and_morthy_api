@@ -92,15 +92,14 @@ footer {
 .info-hover {
   display: none;
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 65%;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
   border-radius: 0 0 10px 10px;
   text-align: center;
-  padding-top: 45%;
+  padding: 10px;
   font-size: 18px; /* Tamaño de fuente */
 }
 
@@ -127,11 +126,44 @@ footer {
 .desconocido {
   background-color: gray;
 }
-
-.info-hover h3 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
+#filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 30px;
+  padding: 10px;
+  margin-left: 80px;
+  top: 100px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
   color: #00ff00;
-  text-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
+  font-size: 18px;
+}
+
+#filter-container h3 {
+  margin: 0 0 15px 0;
+  font-size: 22px;
+  text-align: center;
+  color: #00ff00;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+}
+
+#filter-container select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  background: #001a00;
+  color: #00ff00;
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 255, 0, 0.4);
+}
+
+#filter-container:hover {
+  background-color: #003300;
+  transform: scale(1.05);
 }
