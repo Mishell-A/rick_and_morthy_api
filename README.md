@@ -1,10 +1,10 @@
-<h1 align="center" >-- CREACIÓN DE LA APLICACIÓN WEB CON EL API --</h1>
+<h1 align="center">**CREACIÓN DE LA APLICACIÓN WEB CON EL API**</h1>
 
-## Resumen:
+## Resumen 📖
 
-<p>Este proyecto consiste en una aplicación web desarrollada por nuestro equipo, que utiliza el API de "Rick and Morty" para ofrecer a los usuarios una experiencia completa sobre la serie. Nuestra web está diseñada para proporcionar un recurso integral para los seguidores, mejorando su experiencia al explorar la serie a través de una interfaz intuitiva y accesible.</p>
+Este proyecto consiste en una aplicación web desarrollada por nuestro equipo, que utiliza el API de "Rick and Morty" para ofrecer a los usuarios una experiencia completa sobre la serie. Nuestra web está diseñada para proporcionar un recurso integral para los seguidores, mejorando su experiencia al explorar la serie a través de una interfaz intuitiva y accesible.
 
-## Proceso de Diseño
+## Proceso de Diseño 🎨
 
 1. **Investigación y Planificación:**
    - **Análisis del API de Rick and Morty:** Estudiamos la documentación del API para entender qué datos estaban disponibles y cómo integrarlos en nuestra aplicación.
@@ -26,11 +26,25 @@
    - **Despliegue:** Publicación de la aplicación web en un servidor accesible para los usuarios.
    - **Monitoreo y Mantenimiento:** Monitoreo continuo del rendimiento de la aplicación y corrección de cualquier problema que surgiera tras el lanzamiento.
 
+## Solución del Problema del Usuario 🛠️
 
-<h3>😎Solución del problema del Usuario:</h3>
-<p>La aplicación web se creó para las personas que aman la serie llamada Rick y Morty en la cual puedan de visualizar todos los personajes que salen en la serie, mas todos los episodios y temporadas que contiene con un breve resumen en cada capítulo, otro son los lugares que sale en la serie, más unos gráficos de opinión o votación de las personas amantes de la serie o rating de los episodios más amados.</p>
-<h3>Historia del usuario en el problema:</h3>
-<p>Un día unos amigos estaban buscando una aplicación web donde contenga toda la información de su serie favorita ya que la profesora les dejo como tarea exponer una serie o película en la cual les guste o amen ellos, entonces se reunieron para buscar la seria pero se enfrentaron en un problema donde no encontraron una aplicación web  donde contenga toda la información de la seria, es por eso que se creó esta aplicación web para que las personas amantes de la serie puedan de visualizar todo respecto a la serie🌻.</p>
+La aplicación web aborda las siguientes necesidades de los fanáticos de "Rick and Morty":
+
+- **Centralización de Información:** Proporciona un único recurso para consultar información completa sobre personajes, episodios y lugares de la serie.
+  
+- **Datos Actualizados:** Ofrece información precisa y actualizada utilizando el API de "Rick and Morty".
+
+- **Interfaz Intuitiva:** Facilita una navegación clara y atractiva, mejorando la experiencia del usuario al explorar la serie.
+
+- **Estadísticas y Opiniones:** Incluye gráficos de votación y opiniones de los fans sobre episodios y personajes, permitiendo a los usuarios ver cuáles son los favoritos de la comunidad y obtener una perspectiva más amplia sobre la serie.
+
+Con esta aplicación, los usuarios pueden acceder fácilmente a toda la información relevante sobre "Rick and Morty" y explorar estadísticas y opiniones en un solo lugar.
+
+## Historia de Usuario 🎯
+
+**Como** fanático de "Rick and Morty",  
+**Quiero** una aplicación web que me permita consultar información detallada sobre personajes, episodios, y lugares de la serie,  
+**Para que** pueda explorar y conocer mejor los detalles y estadísticas relacionadas con la serie de forma rápida y centralizada.
 
 ## Prototipos
 
@@ -62,15 +76,15 @@
 | --------- | ------------ |
 | ![Episodios](https://i.postimg.cc/8kfMLNck/Whats-App-Image-2024-09-12-at-9-32-58-PM.jpg) | ![Estadísticas](https://i.postimg.cc/prM1ByJz/2-2.jpg) |
 
-## 🔨  Stack 
+## Stack 🚀
 
 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
 [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)
 
-## <div> 📋 Fue creado por: </div>
+## Creado por 👩‍💻👨‍💻
 
 * [Mishell Arroyo](https://github.com/Mishell-A)
-* [Oriana](https://github.com/Mishell-A)
-* [Xiomara](#)
+* [Oriana](#)
 * [Soraya](#)
+* [Xiomara](https://github.com/xiomara-18)
