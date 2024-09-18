@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Episodios</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/contEpsiodio.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -13,7 +17,7 @@
     <script type="module" src="./assets/js/scriptEpisodios.js"></script>
   </head>
   <body>
-    <nav>
+    <header>
       <img
         src="https://images.thedirect.com/media/article_full/rick1.jpg"
         alt="Rick"
@@ -23,6 +27,20 @@
         src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/12/rick-and-morty-anime.jpg"
         alt="Morty"
       />
+    </header>
+    <nav class="filtros">
+      <select id="filter-container">
+        <option value="Todas">Todas las temporadas</option>
+        <option value="1">Temporada 1</option>
+        <option value="2">Temporada 2</option>
+        <option value="3">Temporada 3</option>
+        <option value="4">Temporada 4</option>
+        <option value="5">Temporada 5</option>
+      </select>
+
+      <a href="./anexo.html" id="btn-regresar"
+        ><i class="bi bi-box-arrow-left"></i> Regresar
+      </a>
     </nav>
 
     <main id="episode-container"></main>

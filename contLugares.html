@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lugares</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/contLocacion.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -13,7 +17,7 @@
     <script type="module" src="./assets/js/scriptLocacion.js"></script>
   </head>
   <body>
-    <nav>
+    <header>
       <img
         src="https://images.thedirect.com/media/article_full/rick1.jpg"
         alt="Rick"
@@ -23,17 +27,32 @@
         src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/12/rick-and-morty-anime.jpg"
         alt="Morty"
       />
+    </header>
+
+    <nav class="filtros">
+      
+          <select id="filter-container">
+              <option value="todos">Todos los tipos</option>
+              <option value="Planet">Planeta</option>
+              <option value="Space station">Estación espacial</option>
+              <option value="Microverse">Microverso</option>
+              <option value="Cluster">Cluster</option>
+              <option value="Resort">Resort</option>
+              <option value="TV">TV</option>
+              <option value="Menagerie">Menagerie</option>
+              <option value="Game">Game</option>
+              <option value="Fantasy town">Fantasy town</option>
+              <option value="Dream">Dream</option>
+              <option value="Memory">Memory</option>
+              <option value="Dimension">Dimension</option>
+              <option value="Consciousness">Consciousness</option>
+              <option value="Hell">Hell</option>
+              <option value="Country">Country</option>
+              <option value="unknown">Desconocido</option>
+          </select>
+          <a href="./anexo.html" id="btn-regresar"><i class="bi bi-box-arrow-left"></i> Regresar
+            </a>
     </nav>
-
-
-    <select id="filter-container">
-        <option value="">Todos los tipos</option>
-        <option value="Planet">Planeta</option>
-        <option value="Cluster">Cluster</option>
-        <option value="Space station">Estación espacial</option>
-        <option value="Microverse">Microverso</option>
-        <option value="Resort">Resort</option>
-    </select>
 
     <main id="lugares-container"></main>
 

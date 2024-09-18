@@ -1,4 +1,6 @@
+@import "./variables.css";
 @import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Handjet:wght@100..900&display=swap");
+
 body {
   background-image: url(https://images.unsplash.com/photo-1569470451072-68314f596aec?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D);
   background-repeat: no-repeat;
@@ -11,7 +13,7 @@ body {
   font-family: "Handjet", sans-serif;
 }
 
-nav {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -23,13 +25,13 @@ nav {
   height: 80px;
 }
 
-nav > img {
+header > img {
   height: 80px;
   margin-top: 5px;
   border-radius: 30px;
 }
 
-nav h1 {
+header h1 {
   color: #00ff00;
   letter-spacing: 5px;
   text-shadow: 0px 0px 5px rgba(0, 255, 0, 0.7);
@@ -42,7 +44,7 @@ footer {
   padding: 1px 20px;
   text-align: center;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  margin-top: 450px;
+  bottom: 0;
   width: 97%;
   height: 50px;
   border-top: 2px solid #00ff00;
@@ -92,19 +94,31 @@ footer {
 .info-hover {
   display: none;
   position: absolute;
-  top: 65%;
+  bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
+  padding: 20px;
   border-radius: 0 0 10px 10px;
   text-align: center;
-  padding: 10px;
-  font-size: 18px; /* Tamaño de fuente */
+}
+
+.caracter-card {
+  position: relative;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .caracter-card:hover .info-hover {
   display: block;
+}
+
+.caracter-card:hover {
+  transform: scale(1.05);
 }
 
 .circulo-status {
@@ -112,11 +126,11 @@ footer {
   height: 10px;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 .vivo {
-  background-color: yellow;
+  background-color: green;
 }
 
 .muerto {
@@ -126,6 +140,12 @@ footer {
 .desconocido {
   background-color: gray;
 }
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #filter-container {
   display: flex;
   flex-direction: row;
@@ -133,7 +153,6 @@ footer {
   align-items: flex-end;
   margin: 30px;
   padding: 10px;
-  margin-left: 80px;
   top: 100px;
   background: rgba(0, 0, 0, 0.8);
   border: 2px solid #00ff00;
@@ -166,4 +185,27 @@ footer {
 #filter-container:hover {
   background-color: #003300;
   transform: scale(1.05);
+}
+
+#btn-regresar {
+  padding: 10px 10px;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+  text-decoration: none;
+  color: #00ff00;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.3s ease-in;
+  margin: 30px;
+}
+
+#btn-regresar i {
+  margin-right: 8px;
+}
+
+#btn-regresar:hover {
+  background-color: #003300;
+  transform: scale(1.03);
 }
