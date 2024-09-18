@@ -6,11 +6,17 @@ $(document).ready(function () {
     
     let nombre = $("#nombre-episodio").text(episodio.name)
     let cajaInfo = $("<div></div>").addClass("info-caja");
+    let detallesAdicionales = $("<div></div>").addClass("detalles-adicionales");
+    let titPersonajes = $("<div></div>").addClass("tit-personajes");
     let fecha = $("<h2></h2>").text(`Fecha al aire: ${episodio.air_date}`).addClass("fecha-episodio");
     let epis = $("<h2></h2>").text(`Temporada: ${episodio.episode}"`).addClass("nombre-episodio");
     let charactersTitle = $("<h2></h2>").text("Personajes:").addClass("tit-personaj");
-    cajaInfo.append(nombre,fecha,epis,charactersTitle);
+    cajaInfo.append(nombre);
     $("#info-container").append(cajaInfo);
+    detallesAdicionales.append(fecha,epis);
+    $("#tipo-Dimension").append(detallesAdicionales);
+    titPersonajes.append(charactersTitle);
+    $("#titulo-Personaje").append(titPersonajes);
     
     if (episodio.characters.length > 0) {
         for (let characters of episodio.characters) {
