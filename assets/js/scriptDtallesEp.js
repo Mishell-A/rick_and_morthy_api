@@ -4,12 +4,12 @@ $(document).ready(function () {
 
     console.log(episodio);
     
-    $("#nombre-episodio").text(episodio.name)
+    let nombre = $("#nombre-episodio").text(episodio.name)
     let cajaInfo = $("<div></div>").addClass("info-caja");
     let fecha = $("<h2></h2>").text(`Fecha al aire: ${episodio.air_date}`).addClass("fecha-episodio");
     let epis = $("<h2></h2>").text(`Temporada: ${episodio.episode}"`).addClass("nombre-episodio");
     let charactersTitle = $("<h2></h2>").text("Personajes:").addClass("tit-personaj");
-    cajaInfo.append(fecha,epis,charactersTitle);
+    cajaInfo.append(nombre,fecha,epis,charactersTitle);
     $("#info-container").append(cajaInfo);
     
     if (episodio.characters.length > 0) {
