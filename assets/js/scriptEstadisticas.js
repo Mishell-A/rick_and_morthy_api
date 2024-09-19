@@ -82,19 +82,25 @@ new Chart($estadistica, {
         ]
     },
     options: {
+        legend: {
+            labels: {
+                fontColor: "white", // Color de las etiquetas de la leyenda
+                fontSize: 14, // Tamaño de las etiquetas de la leyenda
+            },
+        },
         scales: {
             yAxes: [{
                 ticks: {
-                    fontColor: "white", // Ajuste de color de la fuente
-                    beginAtZero: true  // Iniciar el eje Y en 0 (opcional)
+                    fontColor: "white", // Cambia el color de las etiquetas del eje Y a blanco
+                    fontSize: 14,
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    fontColor: "white", // Cambia el color de las etiquetas del eje X a blanco
+                    fontSize: 14,
                 }
             }]
         },
-        legend: {
-            labels: {
-                fontColor: "white", // Ajuste del color de las etiquetas de la leyenda
-                fontSize: 14
-            }
-        }
     }
 });
