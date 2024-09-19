@@ -52,21 +52,18 @@ Con esta aplicación, los usuarios pueden acceder fácilmente a toda la informac
 
 | Página Principal | Página de Selección |
 | ---------------- | -------------------- |
-| ![Página Principal](https://i.postimg.cc/1tkbYvsg/Whats-App-Image-2024-09-12-at-11-38-37-AM.jpg) | ![Página de Selección](https://i.postimg.cc/VN5TfxNr/Whats-App-Image-2024-09-12-at-11-38-44-AM.jpg) |
+| ![Página Principal](https://i.postimg.cc/NMDXRLgC/Whats-App-Image-2024-09-18-at-7-09-59-PM.jpg) | ![Página de Selección](https://i.postimg.cc/5tc8VZ7g/Whats-App-Image-2024-09-18-at-7-10-00-PM.jpg) |
 
-| Personajes | Lugares |
+| Selección | Detalles |
 | ---------- | ------- |
-| ![Personajes](https://i.postimg.cc/1tkbYvsg/Whats-App-Image-2024-09-12-at-11-38-37-AM.jpg) | ![Lugares](https://i.postimg.cc/VN5TfxNr/Whats-App-Image-2024-09-12-at-11-38-44-AM.jpg) |
+| ![Personajes](https://i.postimg.cc/yNFcYv2H/titulo-1.png) | ![Lugares](https://i.postimg.cc/L8q6T5VQ/Whats-App-Image-2024-09-18-at-8-47-38-PM.jpg) |
 
-| Episodios | Estadísticas |
-| --------- | ------------ |
-| ![Episodios](https://i.postimg.cc/1tkbYvsg/Whats-App-Image-2024-09-12-at-11-38-37-AM.jpg) | ![Estadísticas](https://i.postimg.cc/VN5TfxNr/Whats-App-Image-2024-09-12-at-11-38-44-AM.jpg) |
 
 ### Prototipo de Alta Fidelidad 💻
 
 | Página Principal | Página de Selección |
 | ---------------- | -------------------- |
-| ![Página Principal](https://i.postimg.cc/Qxsy99tr/2-33.jpg) | ![Página de Selección](https://i.postimg.cc/66CT93TZ/Whats-App-Image-2024-09-12-at-9-37-42-PM.jpg) |
+| ![Página Principal](https://i.postimg.cc/mDvkNtZY/Whats-App-Image-2024-09-17-at-8-36-13-PM.jpg) | ![Página de Selección](https://i.postimg.cc/66CT93TZ/Whats-App-Image-2024-09-12-at-9-37-42-PM.jpg) |
 
 | Personajes | Lugares |
 | ---------- | ------- |
@@ -74,7 +71,8 @@ Con esta aplicación, los usuarios pueden acceder fácilmente a toda la informac
 
 | Episodios | Estadísticas |
 | --------- | ------------ |
-| ![Episodios](https://i.postimg.cc/8kfMLNck/Whats-App-Image-2024-09-12-at-9-32-58-PM.jpg) | ![Estadísticas](https://i.postimg.cc/prM1ByJz/2-2.jpg) |
+| ![Episodios](https://i.postimg.cc/8kfMLNck/Whats-App-Image-2024-09-12-at-9-32-58-PM.jpg) | ![Estadísticas](https://i.postimg.cc/LX2fqjMZ/Whats-App-Image-2024-09-18-at-7-10-00-PM-1.jpg) |
+
 
 ## 🔨 Stack 
 
