@@ -75,3 +75,15 @@ nav {
   max-width: 1000px !important;
   margin: 0 auto;
 }
+
+footer {
+  background: linear-gradient(135deg, #003300, #00ff00);
+  color: #ffffff;
+  padding: 1px 20px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  width: 97%;
+  height: 50px;
+  border-top: 2px solid #00ff00;
+  margin-top: 20px;
+}
